@@ -1,0 +1,18 @@
+<div class="col-md-6">
+  <div class="form-group">
+    <label for="nomeInput">Nome</label>
+    <input type="text" class="form-control" #name id="nomeInput">
+  </div>
+</div>
+<div class="col-md-6">
+  <div class="form-group">
+    <label for="idadeInput">Duração</label>
+    <input type="text" class="form-control" #duration id="idadeInput">
+  </div>
+</div>
+
+<div class="col-12 mt-3">
+  <button (click)="add(name.value, duration.value)" class="btn btn-dark w-100 bg-black" type="button">
+    Divulgar Curso
+  </button>
+</div>

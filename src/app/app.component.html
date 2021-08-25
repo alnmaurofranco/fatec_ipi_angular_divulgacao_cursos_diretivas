@@ -1,0 +1,26 @@
+<section class="py-24">
+  <div class="container max-w-screen-xl">
+    <div class="row align-items-center">
+      <div class="mt-5 text-center">
+        <h1 class="rfs-25 fw-bolder display-4">
+          🎓 Divulgação de Cursos 🎓
+        </h1>
+        <p class="lead mb-10">
+          Pagina para divulgação de cursos presenciais ou on-line confira uma lista abaixo.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-3" *ngFor="let course of courses">
+        <app-list-courses [course]="course"></app-list-courses>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <app-register-course (addCourse)="handleAddCourse($event)"></app-register-course>
+      </div>
+    </div>
+  </div>
+</section>
