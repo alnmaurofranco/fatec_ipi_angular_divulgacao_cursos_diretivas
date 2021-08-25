@@ -11,8 +11,10 @@ export class AppComponent {
   hiddenButton = false;
 
   courses = [
-    { name: 'ReactJS', duration: 46 },
-    { name: 'Express.js', duration: 86 },
+    { name: 'JavaScript', duration: 86 },
+    { name: 'TypeScript', duration: 146 },
+    { name: 'ReactJS', duration: 86 },
+    { name: 'Next.js', duration: 90 },
   ];
 
   handleAddCourse(course) {
